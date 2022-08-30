@@ -12,7 +12,7 @@ Einige wichtige Commands sind:
 1. `mkdocs serve` 
     - Mit diesem Command wird die Dokumentation lokal gehosted und kann getestet werden.
 2. `mkdocs gh-deploy` 
-    - Dieser Command kompiliert die Website und veröffentlicht Sie auf der oben genannten Domain. Wichtig: `git pull` vorher ausführen.
+    - Dieser Command kompiliert die Website und veröffentlicht Sie auf der oben genannten Domain.
 
 ### Workflow
 Die Dokumentation ist im Unterordner "docs" zu erstellen, wobei `index.md` die Home-Seite darstellt.
