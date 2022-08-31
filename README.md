@@ -4,7 +4,8 @@ In diesem Repository ist das MkDocs-Projekt zur technischen Dokumentation der ed
 
 ## Dev Setup
 Als Erstes muss MkDocs installiert werden:
-`pip install mkdocs`.
+`pip install mkdocs`.  
+Danach das verwendete Theme: `pip install mkdocs-material`
 
 ### Commands
 Einige wichtige Commands sind:
