@@ -2,3 +2,4 @@ site_name: educast.nrw App Dokumentation
 
 theme:
   name: material
+  language: de
