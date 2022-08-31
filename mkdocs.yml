@@ -1,20 +1,17 @@
 site_name: educast.nrw App Dokumentation
 site_author: 'Sebastian Hohn, Lennart Ferlings, Bennit Strack, Hannah Niehaus, Tom Schüppler'
-# repo_url: "https://github.com/educastmobileapp/docs"
 
 nav:
   - Home: index.md
   - Setup: setup.md
   - Userguide: userguide.md
-  - Backend: 
-    - Backend: backend/struktur.md
-    - Datenbank: backend/database.md
-    - Login: backend/login.md
-  - Frontend: 
-    - Frontend: frontend/entwurf.md
-    - Download: frontend/download.md
-    - Login: frontend/login.md
-    - Player: frontend/player.md
+  - Struktur: struktur.md
+  - Datenbank: database.md
+  - Login: login.md
+  - Aufbau/Entwurf: entwurf.md
+  - Implementation: 
+    - Download: implementation/download.md
+    - Player: implementation/player.md
   - Restriktionen: restriktionen.md
   - Ausblick: future_work.md
 

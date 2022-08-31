@@ -1,1 +1,0 @@
-Backendstruktur erklären und auf swagger verweisen
