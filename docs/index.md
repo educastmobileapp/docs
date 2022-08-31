@@ -24,7 +24,3 @@ Ein weiteres Problem entsteht durch infrastrukturelle Unzulänglichkeiten beim N
 ### Anforderungen
 -- HIER DIE ANFORDERUNGEN DEFINIEREN-- 
 
-
-# [Setup](setup.md)
-
-Eine Erklärung, wie die Systeme der App aufgesetzt werden müssen, ist [hier](setup.md) zu finden.
