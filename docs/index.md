@@ -21,6 +21,14 @@ Im Mittelpunkt der Entwicklung stand es, den Endnutzern, also Studierenden, eine
 Bei YouTube oder Streaminganbietern wie Netflix und Amazon Prime, sind Smartphone-Apps längst ein gängiger und einfacher Weg auf die Angebote zuzugreifen. Für digitale Vorlesungen gilt das nicht, der Zugriff ist unnötig aufwendig und umständlich.  
 Ein weiteres Problem entsteht durch infrastrukturelle Unzulänglichkeiten beim Netzausbau in NRW bzw. Deutschland. Vorlesungen sollten für den Konsum unterwegs auch Offline zur Verfügung stehen, damit Internetunterbrechungen nicht zu Streamingabbruch führen und Datenvolumen gespart werden kann.
 
+### educast.nrw
+
+Die Weiterentwicklung videobasierter Lehre übernimmt in Nordrhein-Westfalen das Projekt [educast.nrw](https://educast.nrw/de/). Als Teil des Programms [„Digitale Hochschule NRW“](https://www.dh.nrw) wird es durch das Land NRW gefördert. Das educast.nrw-Konsortium bilden die Universität Duisburg-Essen, die Universität zu Köln und konsortialführend die Westfälische Wilhelms-Universität Münster. 
+
+educast.nrw nutzt für die Erstellung, Verwaltung und Bereitstellung der Videoinhalte die Software [Opencast](https://opencast.org). Opencast baut Systeme für das Hochschulumfeld mithilfe von Entwicklern internationaler Hochschulen und Organisationen. Die Systeme sind nach dem Open-Source-Ansatz frei verfügbar. 
+
+Die Video App soll in Zukunft im Rahmen von educast.nrw eingesetzt werden und auch der Opencast-Community als Open-Source-Software zur Verfügung stehen. 
+
 ### Anforderungen
 -- HIER DIE ANFORDERUNGEN DEFINIEREN-- 
 
