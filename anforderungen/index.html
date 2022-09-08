@@ -15,7 +15,7 @@
     
     
       
-        <title>Userguide - educast.nrw App Dokumentation</title>
+        <title>Anforderungen - educast.nrw App Dokumentation</title>
       
     
     
@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#anforderungen" class="md-skip">
+          Zum Inhalt
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -89,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Userguide
+              Anforderungen
             
           </span>
         </div>
@@ -187,11 +192,87 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../anforderungen/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Anforderungen
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Anforderungen
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#der-player" class="md-nav__link">
+    Der Player
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#login" class="md-nav__link">
+    Login
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#einschreibeschlussel" class="md-nav__link">
+    Einschreibeschlüssel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sprachauswahl" class="md-nav__link">
+    Sprachauswahl
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download" class="md-nav__link">
+    Download
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance" class="md-nav__link">
+    Performance
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -217,19 +298,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../userguide/" class="md-nav__link">
         Userguide
       </a>
-      
     </li>
   
 
@@ -403,6 +476,58 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#der-player" class="md-nav__link">
+    Der Player
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#login" class="md-nav__link">
+    Login
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#einschreibeschlussel" class="md-nav__link">
+    Einschreibeschlüssel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sprachauswahl" class="md-nav__link">
+    Sprachauswahl
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download" class="md-nav__link">
+    Download
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance" class="md-nav__link">
+    Performance
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -416,9 +541,29 @@
                 
 
 
-  <h1>Userguide</h1>
-
-
+<h1 id="anforderungen">Anforderungen</h1>
+<p>In diesem Abschnitt sind die Anforderungen an die App aufgelistet.</p>
+<p>Die Hauptaufgabe der App ist das Abspielen von Vorlesungsvideos auf dem mobilen Endgerät. Die Videos sind von dem educast.nrw Server, der jeweiligen Hochschule der Studierenden, zu laden. </p>
+<h2 id="der-player">Der Player</h2>
+<p>Die zentrale Aufgabe der App ist das Abspielen von Videos. Deshalb hat der Player mehr Funktionen als nur das Starten und Pausieren von Videos.</p>
+<p>So kann man die Qualität und die Wiedergabegeschwindigkeit ändern. Mit einem Doppelklick auf dem Bildschirm auf der linken bzw. rechten Seite lässt sich das Video vor bzw. zurück spulen, so dass die Studierenden sich z.B. komplexe Inhalte einfach nochmal anschauen können.</p>
+<p>Der Videofortschritt wird auch Gerätübergreifen gespeichert. Nach einer Pause können die Studierenden genau an der richtigen Position das Video weiterschauen.</p>
+<p>Bei der Aufzeichnung von Vorlesungen gibt es oft zwei Ansichten. Eine Ansicht von den Folien und eine von der Vortragenden Person. Deshalb gibt es eine Funktion zum Wechseln der Ansicht.</p>
+<h2 id="login">Login</h2>
+<p>Des Weiteren ist eine Anmeldefunktion benötigt. Hier melden sich die Studierenden mit ihrer Hochschulkennung und ihren Passwörtern an. Dieselben Anmeldedaten, die auch für andere Hochschule bezogene IT-Dienste benötigt sind. So ist sichergestellt das nur berechtigte Personen die App nutzen können. Außerdem können individuelle Einstellungen gespeichert werden. Zuletzt ermöglicht die Anmeldung die Identifizierung der Hochschulzugehörigkeit der Studierenden. Dies ist für die Auswahl des richtigen educast.nrw Servers nötig.</p>
+<p>Die Studierenden bleiben 6 Monate lang angemeldet und müssen sich nicht jeden Tag neu anmelden. Außerdem können die Studierenden in den Einstellungen ihren Namen und ihre E-Mail einsehen, um so festzustellen wer grade angemeldet ist.</p>
+<h2 id="einschreibeschlussel">Einschreibeschlüssel</h2>
+<p>Da ein Großteil der Vorlesungen und somit auch der Vorlesungsvideos mit einem Einschreibeschlüssen gesichert sind, ist eine sichere Funktion zum Abfragen des Einschreibeschlüssells notwendig.</p>
+<p>Zuletzt wird eine intuitive UI Struktur benötig, mit der man durch die App navigieren kann. So sollte kein Zugriff auf anderen Inhalt gewährt werden, bevor man nicht angemeldet ist.</p>
+<h2 id="sprachauswahl">Sprachauswahl</h2>
+<p>Eins der Wichtigsten Features ist die Auswahl der Sprache. In den Einstellungen kann zwischen Deutsch und Englisch gewechselt werden. So wird die Nutzung der App auch internationalen Studenten ermöglicht.</p>
+<h2 id="download">Download</h2>
+<p>Eine weitere Wichtige Funktion, ist das Downloaden der Videos und spätere abspielen ohne eine Internetverbindung. Dies ermöglicht zum Beispiel das Schauen von Vorlesungsvideos in der Deutschen Bahn, wo selten eine stabile Internetverbindung vorhanden ist (todo: zu wertend?). Ein entscheidender Vorteil der Mobilen App, im Vergleich zum Anschauen der Videos im Browser.</p>
+<p>Im Browser ist kein Download möglich, da nicht sichergestellt werden kann, dass die Videos nicht an unbefugte weitergegeben werden. Bei der educast App werden die Videos in einem sicheren App spezifischen Bereich gespeichert, so dass nicht außerhalb der App darauf zugegriffen werden kann.</p>
+<p>Es ist möglich einzelne Videos zu downloaden, sowie alle Videos einer Vorlesung zusammen. In den Einstellungen kann man die Videos wieder löschen und es gibt auch die Möglichkeit alle Videos auf einmal zu löschen.</p>
+<h2 id="performance">Performance</h2>
+<p>Auch die Performance der App ist wichtig. Es wird vermieden redundante Request an den Server zu senden, stattdessen werden Informationen die später noch gebraucht werden im App internen Cache gehalten (todo: stimmt das so).</p>
+<p>Dadurch wird Internetbandbreite eingespart und jene Elemente können schneller angezeigt werden. Außerdem werden auch viele Request im Backend für 15 Minuten gecached. So wird die Antwort Zeit von häufigen Anfragen beschleunigt und Rechenleistung vom Server geschont, wodurch größere Nutzerzahlen weniger problematisch sind.</p>
 
 
 
@@ -437,7 +582,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../setup/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Setup" rel="prev">
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Zurück: Home" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -446,20 +591,20 @@
               <span class="md-footer__direction">
                 Zurück
               </span>
-              Setup
+              Home
             </div>
           </div>
         </a>
       
       
         
-        <a href="../struktur/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Struktur" rel="next">
+        <a href="../setup/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Setup" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Weiter
               </span>
-              Struktur
+              Setup
             </div>
           </div>
           <div class="md-footer__button md-icon">
