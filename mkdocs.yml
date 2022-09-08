@@ -3,6 +3,7 @@ site_author: 'Sebastian Hohn, Lennart Ferlings, Bennit Strack, Hannah Niehaus, T
 
 nav:
   - Home: index.md
+  - Anforderungen: anforderungen.md
   - Setup: setup.md
   - Userguide: userguide.md
   - Struktur: struktur.md
