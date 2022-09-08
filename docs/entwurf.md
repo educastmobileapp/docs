@@ -6,9 +6,7 @@ In diesen Abschnitt sind die Strukturen beschrieben, mit denen die Anforderungen
 
 Damit die Studierenden der App alle Funktionen nutzen können und sich gut zurechtfinden, gibt es mehrere möglichst intuitive Ansichten. In der folgenden Grafik sind diese Ansichten und ihre Navigationswege zu sehen.
 
-todo: warum läd das Bild nicht?
-
-![](../assets/images/Frontent-Entwurf_Grafik.jpg)
+![](/assets/images/Frontent-Entwurf_Grafik.jpg)
 *App Ansichten und Navigationspfade*
 
 Bevor man auf die eigentliche App zugreifen kann, muss man sich auf der Login Seite anmelden. Diese wird automatisch geöffnet, falls man kein gültiges Token hat, welches man nach anmelden für 6 Monate bekommt. Hier werden die Studierenden durch den Anmeldeprozess geleitet. Detailliertere Informationen gibt es auf der Login (todo: Link einfügen) Seite. Nach erfolgreichen anmelden kommt man zur Hauptansicht der App. 
