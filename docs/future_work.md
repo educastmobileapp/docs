@@ -43,4 +43,7 @@ Diese kann mit einer Zoomfunktion gewährleistet werden. Damit kann der Studiere
 Das ist vor allem bei Tafelbildern hilfreich bei der Dozierende Mitschriften zeigen die klein sein können und schwierig zu lesen sind.
 
 
+
+
+
 Dies ist eine kleine Auswahl an Möglichkeiten für zukünftige Umsetzungen und unseren Vostellungen wie die mobile Anwendung weitere Aufbesserungsmöglichkeiten erhalten kann. 
