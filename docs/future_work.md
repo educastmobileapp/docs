@@ -1,49 +1,47 @@
 # Ausblick
 
-Im Ausblick stehen zusätzlich zu den bisher vorhandenen Anwendungsmöglichkeiten weitere Funktionen an. 
-Diese sollen dem Studierenden ein besseres Nutzungserlebnis gewährleisten und das Potential der App ausschöpfen.
-Sie sollen vielmehr als Hilfe zur Weiterarbeit dienen als für eine klare Empfehlung.
+Basierend auf dem aktuellen Stand soll an dieser Stelle ein Ausblick über zukünftige Arbeit an der App und deren Ausbau gegeben werden.
 
-Die Funktionen sind von uns ausgewählte Beispiele die möglich für einen weiteren Entwicklungsverlauf des Projekts educast.nrw darstellen sollen.
-Zu diesen Gehören: 
+## Lasttests
 
-* [Vorschaubilder](#Vorschaubilder)
-* [Kapitel](#Kapitel)
-* [Tablet](#Tablet)
-* [Zoomen](#Zoomen)
+## Release in den AppStores
+
+## Behebung der Restriktionen
+
+## Zusätzliche Funktionen
+Zusätzliche Funktionen sollen den Studierenden ein besseres Nutzungserlebnis ermöglichen und das volle Potenzial der App ausschöpfen. 
+
+Die Funktionen sind von uns ausgewählte Beispiele, die Möglichkeiten für den weiteren Entwicklungsverlauf des Projekts educast.nrw darstellen sollen.
+Zu diesen gehören: 
+
+* [Vorschaubilder](#vorschaubilder)
+* [Kapitel](#kapitel)
+* [Tablet](#tablet)
+* [Zoomen](#zoomen)
 
 ### Vorschaubilder
 
-Bei [Youtube](https://www.youtube.com) gibt es die Möglichkeit über die Zeitleiste des Videos zu scrollen. 
-Dabei entstehen viele kleine Vorschaubilder, die auf der Zeitleiste dem Studierenden einen Einblick in Szenen zu einem anderen Zeitpunkt im Video geben. 
-Solch eine Funktion kann dem Studierenden in der mobilen Anwendung educast.nrw hilfreich sein um eine passende Szene zu finden und dorthin zu navigieren. 
+Bei [Youtube](https://www.youtube.com) gibt es die Möglichkeit über die Zeitleiste des Videos zu scrubben. Dabei werden auf der Zeitleiste viele kleine Vorschaubilder angezeigt, die dem User einen Einblick in Szenen zu einem anderen Zeitpunkt im Video geben. Solch eine Funktion könnte den Studierenden in der mobilen Anwendung von educast.nrw behilflich sein, um eine passende Szene zu finden und dort hin zu navigieren. 
 
 ### Kapitel
 
-Bei [Youtube](https://www.youtube.com) kann der Erstellende des Videos entscheiden Kapitel hinzuzufügen. 
-Der Nutzende sieht diese in der Zeitleiste die Abschnitte mit Abtrennungen gegliedert und beim drübernavigieren taucht der Name des Kapitels auf.
-Das hilft dem Studierenden verschiedene Kapitel einordnen zu können und bei Bedarf von Lernwiederholung o.ä. zu einem bestimmten Kapitel zu springen. 
-Dadurch werden die Videos übersichtlicher und helfen gezielteres Lernen zu ermöglichen.
+Bei [Youtube](https://www.youtube.com) kann der Erstellende des Videos sich dafür entscheiden Kapitel hinzuzufügen. Der User sieht diese in der Zeitleiste. Die Abschnitte werden mit Abtrennungen gegliedert und beim navigieren zu diesen Abtrennungen taucht der Name des Kapitels auf. Dies wäre auch für Studierende nützlich, um verschiedene Kapitel identifizieren zu können und z.B. für das Wiederholen von Inhalten gezielt zu einem bestimmten Kapitel springen zu können. Dadurch würden die Videos übersichtlicher und somit gezielteres Lernen ermöglicht.
 
 ### Tablet
 
-Das Grundgerüst der Videoplattform ist nur auf Smartphones angepasst. Viele Studierende werden die Option auf dem Tablett zu lernen wahrscheinlich nutzen und deswegen sollte auch eine Tablettoptimierte Version erstellt werden.
-Durch einen Cross-Plattform Ansatz sind die grundlegenden Funktionen übernommen, dennoch besteht viel mehr Platz auf einem Tablet das mit Content gefüllt werden kann. 
+Die Videoapp ist zwar bereits jetzt auch auf Tablets vollumfänglich nutzbar, aber sie ist bisher nur auf die Größe von Smartphones optimiert. Viele Studierende würden die Option auf dem Tablet zu lernen sehr wahrscheinlich nutzen und deswegen sollte auch eine tablettoptimierte Version erstellt werden. Diese würde dafür sorgen, dass der auf einem Tablet verfügbare, zusätzliche Platz sinnvoll genutzt werden könnte.  
 
-Ein Beispiel für frei verfügbaren Platz ist der Videobildschirm. Denn educast.nrw bietet die Funktion mehrere Videos parallel laufen zu lassen, wie die Referentenansicht parallel zur Folienansicht. 
-Auf dem Smartphone werden die Videos aufgrund des kleinen Bildschirms nur einzeln gespielt werden können. Auf dem Tablett hingegen kann eine Picture-in-Picture Ansicht genutzt werden. 
-Das bedeutet es können zwei Videos gleichzeitig auf einem Bildschirm gespielt werden während das eine Video in voller Größe verfügbar und das andere klein zu sehen ist.
+Ein Beispiel für frei verfügbaren Platz findet sich im Videobildschirm. Denn educast.nrw bietet die Funktion mehrere Videos parallel laufen zu lassen, wie z.B. eine Dozierendenansicht parallel zur Folienansicht. 
+Auf dem Smartphone werden die Ansichten aufgrund des kleinen Bildschirms separat angezeigt und es muss zwischen ihnen gewechselt werden. Auf dem Tablet hingegen könnte eine Picture-in-Picture Ansicht genutzt werden. Das bedeutet, es könnten zwei Videos gleichzeitig auf einem Bildschirm abgespielt werden, während das eine Video in voller Größe verfügbar und das andere klein zu sehen ist.
 
-Außerdem kann die Seitenleiste im Home-Bildschirm permanent bestehen bleiben wodurch die Klickzahl zur Navigation verringert wird. 
+Außerdem könnte die Seitenleiste im Home-Bildschirm permanent bestehen bleiben wodurch die nötigen Schritte bei der Navigation durch die App verringert werden könnten. 
 
 ### Zoomen
 
-Die Ansicht auf vielen Smartphones ist klein und Schriften in Videos unleserlich. Um kleine Schriften dennoch lesen zu können benötigt der Studierende Unterstützung. 
-Diese kann mit einer Zoomfunktion gewährleistet werden. Damit kann der Studierende in unleserliche Folien hineinzoomen. 
-Das ist vor allem bei Tafelbildern hilfreich bei der Dozierende Mitschriften zeigen die klein sein können und schwierig zu lesen sind.
+Die Ansicht auf vielen Smartphones ist klein und Schriften in Videos unleserlich. Um kleine Schriften dennoch lesen zu können, benötigen Studierende Unterstützung. Diese könnte mit einer Zoomfunktion gewährleistet werden. Damit könnten Studierende in unleserliche Folien hineinzoomen. Das wäre vor allem bei hilfreich, wenn Dozierende Dokumente zeigen oder Tafelbilder erstellen, die klein und schwierig zu lesen sind.
 
 
 ***
 
 
-Dies ist eine kleine Auswahl an Möglichkeiten für zukünftige Umsetzungen und unseren Vostellungen wie die mobile Anwendung weitere Aufbesserungsmöglichkeiten erhalten kann. 
+Dies ist eine kleine Auswahl an Möglichkeiten für zukünftige Umsetzungen und unseren Vorstellungen wie die mobile Anwendung weitere Verbesserungen erhalten könnte. 
