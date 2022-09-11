@@ -2,9 +2,10 @@
 
 Auf dieser Website finden sie die technische Dokumentation der Mobileapp educast.nrw.
 
-[educast.nrw](educast.nrw) ist ein Projekt zur landesweiten Vereinheitlichung der Universitäts-Videoservices zur Ermöglichung von digitaler Lehre mittels Online-Vorlesungen.
-
 Um einen komfortablen, mobilen Zugriff auf mit educast.nrw bereitgestellte Inhalte durch Studierende zu ermöglichen, wurde die mobile Anwendung entwickelt, die hier dokumentiert wird.
+
+![](assets/images/app_overview.jpg)
+*Zentrale Ansichten der App*
 
 ### educast.nrw
 Die Weiterentwicklung videobasierter Lehre übernimmt in Nordrhein-Westfalen das Projekt [educast.nrw](https://educast.nrw/de/). Als Teil des Programms [„Digitale Hochschule NRW“](https://www.dh.nrw) wird es durch das Land NRW gefördert. Das educast.nrw-Konsortium bilden die Universität Duisburg-Essen, die Universität zu Köln und konsortialführend die Westfälische Wilhelms-Universität Münster. 
