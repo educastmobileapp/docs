@@ -1,6 +1,6 @@
 # Willkommen zur educast.nrw-App Dokumentation
 
-Auf dieser Website finden sie die technische Dokumentation der Mobileapp educast.nrw.
+Auf dieser Website finden Sie die technische Dokumentation der Mobileapp educast.nrw.
 
 Um einen komfortablen, mobilen Zugriff auf mit educast.nrw bereitgestellte Inhalte durch Studierende zu ermöglichen, wurde die mobile Anwendung entwickelt, die hier dokumentiert wird.
 
