@@ -22,3 +22,6 @@ theme:
   language: de
   logo: assets/images/icon_RGB.png
   favicon: assets/images/favicon.ico
+
+extra_css:
+  - stylesheets/extra.css
