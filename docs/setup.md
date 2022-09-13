@@ -66,10 +66,25 @@ Die App ist mit dem Framework [Flutter](https://flutter.dev/) in [Dart](https://
 ### Kompilierung
 
 #### Android
-Um die App für Android zu kompilieren muss das Appbundle oder die APK gebaut werden. Das Appbundle enthält die APKs für unterschiedliche Laufzeiten (ARM 32-bit, ARM 64-bit, x86 64-bit) und ist deshalb vom Google Playstore bevorzugt. Zum erstellen muss im Projektordner `flutter build appbundle` ausgeführt werden. Anschließend ist es unter `/build/app/outputs/bundle/release/app.aab` zu finden.
+1. Um die App für Android zu kompilieren muss das Appbundle oder die APK gebaut werden. Das Appbundle enthält die APKs für unterschiedliche Laufzeiten (ARM 32-bit, ARM 64-bit, x86 64-bit) und ist deshalb vom Google Playstore bevorzugt. Zum Erstellen muss im Projektordner `flutter build appbundle` ausgeführt werden. Anschließend ist es unter `/build/app/outputs/bundle/release/app.aab` zu finden.
 
-Um die APKs zu kompilieren muss `flutter build apk --split-per-abi` ausgeführt werden. Die Flag führt dazu, dass für die unterschiedlichen Laufzeiten eigene APKs erstellt werden, anstatt eine Große, die den kompilierten Code von allen enthält. Anschließend können alle gebauten APKs unter `/build/app/outputs/bundle/release` gefunden werden.
+2. Um die APKs zu kompilieren muss `flutter build apk --split-per-abi` ausgeführt werden. Die Flag führt dazu, dass für die unterschiedlichen Laufzeiten eigene APKs erstellt werden, anstatt eine Große, die den kompilierten Code von allen enthält. Anschließend können alle gebauten APKs unter `/build/app/outputs/bundle/release` gefunden werden.
 
-Um die App nun direkt auf einem Gerät zu installieren, muss es über USB angeschlossen werden und USB-Debugging in den Einstellungen aktiviert sein. Anschließend reicht es `flutter install` auszuführen und der richtige Build wird installiert.
+3. Um die App nun direkt auf einem Gerät zu installieren, muss es über USB angeschlossen werden und USB-Debugging in den Einstellungen aktiviert sein. Anschließend reicht es `flutter install` auszuführen und der richtige Build wird installiert.
 
+Für weitere Informationen rufen Sie die Dokumentation des Vorgangs auf der [Flutter Website](https://docs.flutter.dev/deployment/android#building-the-app-for-release) auf.
+
+#### iOS
+1. Um die App auf einem iOS-Gerät zu installieren, wird ein Mac und ein Apple Developer Account gebraucht. Das Gerät muss per USB an den Computer angeschlossen werden und es muss sowohl dem Mac, als auch dem Entwicklerzertifikat vertraut werden. Nachdem dem "Diesen Computer vertrauen?"-Dialog beim Verbinden zugestimmt wurde, muss in den Einstellungen unter **Allgemein > Geräteverwaltung** dem Zertifikat vertraut werden. Ab iOS 16 ist es dazu nötig den Entwicklermodus in den Sicherheitseinstellungen zu aktivieren.
+
+2. Sollte Xcode nicht bereits auf dem Mac installiert sein, ist es notwendig, es von der [offiziellen Website](https://developer.apple.com/xcode/) zu installieren.
+
+3. Anschließend muss im Flutter-Projektordner `open ios/Runner.xcworkspace` in einem Terminal aufgerufen werden. Somit wird ein Xcode Workspace erstellt.
+
+4. Nach Auswählen des richtigen Gerätes, muss in den Zieleinstellungen unter "Runner" im Reiter **Signing & Capabilities** Ihr Account bei Team ausgewählt sein.
+
+5. Nun kann die App mit dem Startknopf oder mit dem Befehl `flutter run` gestartet werden. Eine USB-Verbindung muss allerdings bestehen bleiben.
+
+
+Für weitere Informationen rufen Sie die Dokumentation des Vorgangs auf der [Flutter Website](https://docs.flutter.dev/get-started/install/macos#deploy-to-ios-devices) auf.
 
