@@ -335,6 +335,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#ios" class="md-nav__link">
+    iOS
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -637,6 +644,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#ios" class="md-nav__link">
+    iOS
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -707,9 +721,37 @@ Wenn gewünscht, kann der Pfad der Konfigurationsdatei mit dem Argument <code>--
 <p>Die App ist mit dem Framework <a href="https://flutter.dev/">Flutter</a> in <a href="https://dart.dev/">Dart</a> geschrieben. Der erste Schritt um die App zu kompilieren ist, Flutter nach der <a href="https://docs.flutter.dev/get-started/install">offiziellen Anleitung</a> zu installieren.</p>
 <h3 id="kompilierung">Kompilierung</h3>
 <h4 id="android">Android</h4>
-<p>Um die App für Android zu kompilieren muss das Appbundle oder die APK gebaut werden. Das Appbundle enthält die APKs für unterschiedliche Laufzeiten (ARM 32-bit, ARM 64-bit, x86 64-bit) und ist deshalb vom Google Playstore bevorzugt. Zum erstellen muss im Projektordner <code>flutter build appbundle</code> ausgeführt werden. Anschließend ist es unter <code>/build/app/outputs/bundle/release/app.aab</code> zu finden.</p>
+<ol>
+<li>
+<p>Um die App für Android zu kompilieren muss das Appbundle oder die APK gebaut werden. Das Appbundle enthält die APKs für unterschiedliche Laufzeiten (ARM 32-bit, ARM 64-bit, x86 64-bit) und ist deshalb vom Google Playstore bevorzugt. Zum Erstellen muss im Projektordner <code>flutter build appbundle</code> ausgeführt werden. Anschließend ist es unter <code>/build/app/outputs/bundle/release/app.aab</code> zu finden.</p>
+</li>
+<li>
 <p>Um die APKs zu kompilieren muss <code>flutter build apk --split-per-abi</code> ausgeführt werden. Die Flag führt dazu, dass für die unterschiedlichen Laufzeiten eigene APKs erstellt werden, anstatt eine Große, die den kompilierten Code von allen enthält. Anschließend können alle gebauten APKs unter <code>/build/app/outputs/bundle/release</code> gefunden werden.</p>
+</li>
+<li>
 <p>Um die App nun direkt auf einem Gerät zu installieren, muss es über USB angeschlossen werden und USB-Debugging in den Einstellungen aktiviert sein. Anschließend reicht es <code>flutter install</code> auszuführen und der richtige Build wird installiert.</p>
+</li>
+</ol>
+<p>Für weitere Informationen rufen Sie die Dokumentation des Vorgangs auf der <a href="https://docs.flutter.dev/deployment/android#building-the-app-for-release">Flutter Website</a> auf.</p>
+<h4 id="ios">iOS</h4>
+<ol>
+<li>
+<p>Um die App auf einem iOS-Gerät zu installieren, wird ein Mac und ein Apple Developer Account gebraucht. Das Gerät muss per USB an den Computer angeschlossen werden und es muss sowohl dem Mac, als auch dem Entwicklerzertifikat vertraut werden. Nachdem dem "Diesen Computer vertrauen?"-Dialog beim Verbinden zugestimmt wurde, muss in den Einstellungen unter <strong>Allgemein &gt; Geräteverwaltung</strong> dem Zertifikat vertraut werden. Ab iOS 16 ist es dazu nötig den Entwicklermodus in den Sicherheitseinstellungen zu aktivieren.</p>
+</li>
+<li>
+<p>Sollte Xcode nicht bereits auf dem Mac installiert sein, ist es notwendig, es von der <a href="https://developer.apple.com/xcode/">offiziellen Website</a> zu installieren.</p>
+</li>
+<li>
+<p>Anschließend muss im Flutter-Projektordner <code>open ios/Runner.xcworkspace</code> in einem Terminal aufgerufen werden. Somit wird ein Xcode Workspace erstellt.</p>
+</li>
+<li>
+<p>Nach Auswählen des richtigen Gerätes, muss in den Zieleinstellungen unter "Runner" im Reiter <strong>Signing &amp; Capabilities</strong> Ihr Account bei Team ausgewählt sein.</p>
+</li>
+<li>
+<p>Nun kann die App mit dem Startknopf oder mit dem Befehl <code>flutter run</code> gestartet werden. Eine USB-Verbindung muss allerdings bestehen bleiben.</p>
+</li>
+</ol>
+<p>Für weitere Informationen rufen Sie die Dokumentation des Vorgangs auf der <a href="https://docs.flutter.dev/get-started/install/macos#deploy-to-ios-devices">Flutter Website</a> auf.</p>
 
 
 
