@@ -63,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#datenbank" class="md-skip">
+          Zum Inhalt
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -257,10 +262,57 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Datenbank
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Datenbank
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#konfiguration" class="md-nav__link">
+    Konfiguration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aufsetzen" class="md-nav__link">
+    Aufsetzen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#daten" class="md-nav__link">
+    Daten
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -405,6 +457,37 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#konfiguration" class="md-nav__link">
+    Konfiguration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aufsetzen" class="md-nav__link">
+    Aufsetzen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#daten" class="md-nav__link">
+    Daten
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -418,9 +501,20 @@
                 
 
 
-  <h1>Datenbank</h1>
-
-
+<h1 id="datenbank">Datenbank</h1>
+<p>Zum Betrieb des Backends ist ein relationales Datenbanksystem notwendig, in dem die nötigen Daten zum Operieren gespeichert werden können. Daher ist es nötig, dass Zugriff auf eine MySQL-Datenbank besteht.</p>
+<h2 id="konfiguration">Konfiguration</h2>
+<p>Die Login-Daten für die Datenbankverbindung müssen in der Konfigurationsdatei (<code>.login.yaml</code>) angegeben werden. Nähere Informationen können in der <a href="../setup/#datenbank">Setup-Dokumentation</a> gefunden werden.<br />
+<strong>Wichtig:</strong> Es wird empfohlen die MySQL-Variablen <code>wait_timeout</code> und <code>interactive_timeout</code> zu erhöhen, damit eine Dysfunktion des Backends wegen abgebrochener Verbindung ausgeschlossen werden kann.</p>
+<h2 id="aufsetzen">Aufsetzen</h2>
+<p>Zur Inbetriebnahme ist nach der richtigen Konfiguration der Login-Daten und der richtigen Rechte Zuteilung Nichts weiter zutun. Alle Tabellen werden automatisch erstellt.</p>
+<h2 id="daten">Daten</h2>
+<p>Im Folgenden ist erläutert, welche Daten gespeichert werden. Es handelt sich hauptsächlich um Daten zur Ermöglichung des Abonnieren-Features.<br />
+<img alt="Modell der Datenbank" src="/assets/images/database_diagram.png" title="Modell der Datenbank" />
+<em>Modell der Datenbanktabellen als UML-Klassendiagramm</em>  </p>
+<p>Zum Einen werden eindeutige Nutzerdaten gespeichert, die es ermöglichen die User beim Login zu identifizieren und einer Universität zuzuordnen. Diese Zuordnung ist technisch notwendig um jedem Studierenden den Zugriff auf die Kurse und Videos seiner Universität zu ermöglichen. Des Weiteren werden einige technische Daten zum Login-Token gespeichert, genaueres dazu kann <a href="../login/">hier</a> gefunden werden.  </p>
+<p>Außerdem werden die vorhandenen Serien gespeichert, was erleichtert den Zugriff auf verfügbare Serien erleichtert und das Verwenden von einem Passwort/Einschreibeschlüssel zum exklusiven Zugang zu Kursvideos ermöglicht.</p>
+<p>Die Tabelle Subscription (engl. für "Abonnement") speichert die Relation zwischen Nutzern und den Serien und gibt an, welcher Studierende, welchen Kurs gespeichert hat. Diese Abonnements werden noch in Semester gegliedert, um dem User im Frontend eine einfache Ansicht ermöglichen zu können.</p>
 
 
 
