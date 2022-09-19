@@ -11,7 +11,7 @@ Zur Inbetriebnahme ist nach der richtigen Konfiguration der Login-Daten und der 
 ## Daten
 Im Folgenden ist erläutert, welche Daten gespeichert werden. Es handelt sich hauptsächlich um Daten zur Ermöglichung des Abonnieren-Features.  
 ![Modell der Datenbank](assets/images/database_diagram.png "Modell der Datenbank")
-*Modell der Datenbanktabellen als UML-Klassendiagramm*  
+*Modell der Datenbanktabellen als UML-Klassendiagramm (Primary Keys sind unterstrichen)*
 
   
 Zum Einen werden eindeutige Nutzerdaten gespeichert, die es ermöglichen die User beim Login zu identifizieren und einer Universität zuzuordnen. Diese Zuordnung ist technisch notwendig um jedem Studierenden den Zugriff auf die Kurse und Videos seiner Universität zu ermöglichen. Des Weiteren werden einige technische Daten zum Login-Token gespeichert, genaueres dazu kann [hier](login.md) gefunden werden.  
