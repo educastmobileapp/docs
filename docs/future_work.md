@@ -9,7 +9,7 @@ Basierend auf dem aktuellen Stand soll an dieser Stelle ein Ausblick über zukü
 
 ## Zukünftige Features
 
-Die folgenden Funktionen sind von uns ausgewählte Beispiele, die Möglichkeiten für den weiteren Entwicklungsverlauf des Projekts educast.nrw darstellen sollen.
+Die folgenden Funktionen sind von uns ausgewählte Beispiele, die Möglichkeiten für den weiteren Entwicklungsverlauf der educast.nrw-App darstellen sollen.
 Zu diesen gehören: 
 
 * [Vorschaubilder](#vorschaubilder)
