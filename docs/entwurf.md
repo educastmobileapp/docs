@@ -1,6 +1,18 @@
 # Entwurf
 
-In diesen Abschnitt sind die Strukturen beschrieben, mit denen die Anforderungen umgesetzt sind. Unterteilt sind diese in Frontend und Backend.
+In diesen Abschnitt sind die Strukturen beschrieben, mit denen die Anforderungen umgesetzt sind.
+
+## Entwurfsentscheidung
+
+### Frontend
+
+Nutzung des Flutter-Frameworks! Warum? Vorteile, Nachteile, usw
+
+
+### Backend
+Die Aufgabe des Backends ist das Bereitstellen von Daten, die im Frontend gebraucht werden. Hierbei geht es um die Abfrage von verfügbaren Serien, Videos, Metadaten sowie das Verwalten von Abonnements.  
+
+Um diese Aufgabe vollumfänglich zu erfüllen ist das Entwickeln einer REST-API nötig, mit der das Frontend Daten mittels HTTP-Requests anfordern kann. Für die Entwicklung unserer REST-API haben wir ein Python-Programm mit dem Framework Flask entwickelt.
 
 ## Frontend
 
