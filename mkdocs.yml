@@ -6,10 +6,9 @@ nav:
   - Anforderungen: anforderungen.md
   - Setup: setup.md
   - Userguide: userguide.md
-  - Struktur: struktur.md
   - Datenbank: database.md
   - Login: login.md
-  - Aufbau/Entwurf: entwurf.md
+  - Entwurf und Struktur: entwurf.md
   - Implementation: 
     - Download: implementation/download.md
     - Player: implementation/player.md

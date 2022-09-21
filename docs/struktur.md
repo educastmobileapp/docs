@@ -1,1 +1,0 @@
-Struktur erklären: Wie hängen Frontend und Backend zusammen? Welche Rolle spielt educast? etc
