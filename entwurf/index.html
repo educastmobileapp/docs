@@ -15,7 +15,7 @@
     
     
       
-        <title>Aufbau/Entwurf - educast.nrw App Dokumentation</title>
+        <title>Entwurf und Struktur - educast.nrw App Dokumentation</title>
       
     
     
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Aufbau/Entwurf
+              Entwurf und Struktur
             
           </span>
         </div>
@@ -241,21 +241,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../struktur/" class="md-nav__link">
-        Struktur
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../database/" class="md-nav__link">
         Datenbank
       </a>
@@ -296,12 +281,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Aufbau/Entwurf
+          Entwurf und Struktur
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Aufbau/Entwurf
+        Entwurf und Struktur
       </a>
       
         
@@ -320,14 +305,41 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#entwurfsentscheidungen" class="md-nav__link">
+    Entwurfsentscheidungen
+  </a>
+  
+    <nav class="md-nav" aria-label="Entwurfsentscheidungen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#frontend" class="md-nav__link">
+    Frontend
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backend" class="md-nav__link">
+    Backend
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frontend_1" class="md-nav__link">
     Frontend
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#backend" class="md-nav__link">
+  <a href="#backend_1" class="md-nav__link">
     Backend
   </a>
   
@@ -352,18 +364,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_9">
+        <label class="md-nav__link" for="__nav_8">
           Implementation
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Implementation" data-md-level="1">
-        <label class="md-nav__title" for="__nav_9">
+        <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
           Implementation
         </label>
@@ -460,14 +472,41 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#entwurfsentscheidungen" class="md-nav__link">
+    Entwurfsentscheidungen
+  </a>
+  
+    <nav class="md-nav" aria-label="Entwurfsentscheidungen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#frontend" class="md-nav__link">
+    Frontend
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backend" class="md-nav__link">
+    Backend
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frontend_1" class="md-nav__link">
     Frontend
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#backend" class="md-nav__link">
+  <a href="#backend_1" class="md-nav__link">
     Backend
   </a>
   
@@ -488,8 +527,16 @@
 
 
 <h1 id="entwurf">Entwurf</h1>
-<p>In diesen Abschnitt sind die Strukturen beschrieben, mit denen die Anforderungen umgesetzt sind. Unterteilt sind diese in Frontend und Backend.</p>
-<h2 id="frontend">Frontend</h2>
+<p>In diesen Abschnitt sind die getroffenen Entwurfsentscheidungen und die Strukturen beschrieben, mit denen die Anforderungen umgesetzt sind.</p>
+<h2 id="entwurfsentscheidungen">Entwurfsentscheidungen</h2>
+<h3 id="frontend">Frontend</h3>
+<p>Nutzung des Flutter-Frameworks! Warum? Vorteile, Nachteile, usw</p>
+<h3 id="backend">Backend</h3>
+<p>Die Aufgabe des Backends ist das Bereitstellen von Daten, die im Frontend gebraucht werden. Hierbei geht es um die Abfrage von verfügbaren Serien, Videos, Metadaten sowie das Verwalten von Abonnements.  </p>
+<p>Um diese Aufgabe vollumfänglich zu erfüllen ist das Entwickeln einer REST-API nötig, mit der das Frontend Daten mittels HTTP-Requests anfordern kann. Für die Entwicklung unserer REST-API haben wir ein Python-Programm mit dem Webframework <a href="https://flask.palletsprojects.com/en/2.2.x/">Flask</a> entwickelt.</p>
+<p>Mit einem knappen zeitlichen Rahmen und einem kleinen Team, war bei der Auswahl, der für das Backend verwendeten Programmiersprache, vor Allem wichtig, dass wir schnell eine funktionierende Anwendung entwickeln können. Da wir zum Teil schon erfahren in der Verwendung von Python waren und die Sprache außerdem eine im Vergleich sehr leicht zu erlernende Programmiersprache ist, war sie die beste Wahl für uns.</p>
+<p>Auch bei der Wahl des Webframeworks legten wir dieses Maß an und entschieden uns für Flask. Flask ist ein light-weight Framework, der relativ minimal ist, sodass schon mit wenig Code ein funktionierender Webserver erstellt werden kann.</p>
+<h2 id="frontend_1">Frontend</h2>
 <p>Damit die Studierenden der App alle Funktionen nutzen können und sich gut zurechtfinden, gibt es mehrere möglichst intuitive Ansichten. In der folgenden Grafik sind diese Ansichten und ihre Navigationswege zu sehen.</p>
 <p><img alt="" src="../assets/images/Frontent-Entwurf_Grafik.jpg" />
 <em>App Ansichten und Navigationspfade</em></p>
@@ -500,7 +547,7 @@
 <p>Einstellungen</p>
 <p>fortsetzung folgft</p>
 <p>ist das nicht quasi schon ein Userguide?</p>
-<h2 id="backend">Backend</h2>
+<h2 id="backend_1">Backend</h2>
 <p>Das Backend stellt die Daten für das Frontend bereit. App spezifische Daten, wie z.B. die Abonnierten Vorlesungen der Studierenden sind in der Datenbank (todo: link Datenbank) von dem Backend gespeichert. Diese werden vom Backend aufbereitet und durch HTTPS API-Endpunkte bereitgestellt.</p>
 <p>Die Vorlesungsvideos und die Metadaten zu jenen hat jede Hochschule auf ihrer educast Instanz gespeichert. </p>
 <p>Grafik</p>
