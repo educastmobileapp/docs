@@ -1,6 +1,6 @@
 # Download
 
-Wie bereits in der Motivation und in den Anforderungen beschrieben, ist die Download-Funktion ein wichtiges Feature, dass umgesetzt werden sollte. Im Folgenden wird die Umsetzung der Funktion dargestellt.
+Wie bereits in der Motivation und in den Anforderungen beschrieben, ist die Download-Funktion ein wichtiges Feature, das umgesetzt werden sollte. Im Folgenden wird die Umsetzung der Funktion dargestellt.
 
 ## Grundlagen
 Die Videos liegen im HLS-Format vor. Das bedeutet in unserem Fall, es liegt eine sogenannte Master-Playlist vor, die auf unterschiedliche Varianten-Playlists verweist, wobei eine Varianten-Playlist immer eine bestimmte Auflösung speichert. Das folgende Bild zeigt eine beispielhafte Master-Playlist.  
