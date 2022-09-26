@@ -3,12 +3,12 @@ site_author: 'Sebastian Hohn, Lennart Ferlings, Bennit Strack, Hannah Niehaus, T
 
 nav:
   - Home: index.md
+  - Anforderungen: anforderungen.md
   - Setup: setup.md
   - Userguide: userguide.md
-  - Struktur: struktur.md
   - Datenbank: database.md
   - Login: login.md
-  - Aufbau/Entwurf: entwurf.md
+  - Entwurf und Struktur: entwurf.md
   - Implementation: 
     - Download: implementation/download.md
     - Player: implementation/player.md
@@ -21,3 +21,6 @@ theme:
   language: de
   logo: assets/images/icon_RGB.png
   favicon: assets/images/favicon.ico
+
+extra_css:
+  - stylesheets/extra.css
