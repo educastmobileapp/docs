@@ -1,10 +1,10 @@
 # Anforderungen
 In diesem Abschnitt sind die Anforderungen an die App aufgelistet.
 
-Die Hauptaufgabe der App ist das Abspielen von Vorlesungsvideos auf dem mobilen Endgerät. Die Videos sind von dem educast.nrw Server, der jeweiligen Hochschule der Studierenden, zu laden. 
+Die Hauptaufgabe der App ist das Abspielen von Vorlesungsvideos auf dem mobilen Endgerät. Die Videos sind auf dem educast.nrw Server der jeweiligen Hochschule der Studierenden gespeichert. Von dem erver aus werden die inhalte dann bei zugriff geladen.
 
 ## Der Player
-Die zentrale Aufgabe der App ist das Abspielen von Videos. Deshalb hat der Player mehr Funktionen als nur das Starten und Pausieren von Videos.
+Die zentrale Aufgabe der App ist das Abspielen von Videos. Zudem hat der Player noch weitere Funktionen als nur das Starten und Pausieren von Videos.
 
 So kann man die Qualität und die Wiedergabegeschwindigkeit ändern. Mit einem Doppelklick auf dem Bildschirm auf der linken bzw. rechten Seite lässt sich das Video vor bzw. zurück spulen, so dass die Studierenden sich z.B. komplexe Inhalte einfach nochmal anschauen können.
 
