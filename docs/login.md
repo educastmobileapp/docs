@@ -7,7 +7,7 @@ Im [Userguide](userguide.md) können Sie genauer nachlesen, wie man sich als Nut
 Beim Öffnen der App wird geprüft, ob lokal bereits ein [Token hinterlegt](login.md#tokenspeicherung) ist. Sofern dies der Fall ist, öffnet sich automatisch der Homescreen. Andernfalls, wird der:die Studierende zum Anmelden aufgefordert und der Loginprozess angestoßen. 
 
 ### Loginprozess
-![](/assets/images/login_structure.png)
+![](assets/images/login_structure.png)
 *Informationsaustausch zwischen dem Frontend, Backend, OIDC Proxy und DFN-AAI*
 
 
