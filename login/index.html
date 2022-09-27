@@ -63,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#login" class="md-skip">
+          Zum Inhalt
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -257,10 +262,83 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Login
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Login
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#loginprozess" class="md-nav__link">
+    Loginprozess
+  </a>
+  
+    <nav class="md-nav" aria-label="Loginprozess">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tokenspeicherung" class="md-nav__link">
+    Tokenspeicherung
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jwks-endpunkt" class="md-nav__link">
+    JWKS Endpunkt
+  </a>
+  
+    <nav class="md-nav" aria-label="JWKS Endpunkt">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#einfugen-eines-neuen-public-keys" class="md-nav__link">
+    Einfügen eines neuen public keys
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logout" class="md-nav__link">
+    Logout
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -390,6 +468,63 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#loginprozess" class="md-nav__link">
+    Loginprozess
+  </a>
+  
+    <nav class="md-nav" aria-label="Loginprozess">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tokenspeicherung" class="md-nav__link">
+    Tokenspeicherung
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jwks-endpunkt" class="md-nav__link">
+    JWKS Endpunkt
+  </a>
+  
+    <nav class="md-nav" aria-label="JWKS Endpunkt">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#einfugen-eines-neuen-public-keys" class="md-nav__link">
+    Einfügen eines neuen public keys
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logout" class="md-nav__link">
+    Logout
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -403,9 +538,24 @@
                 
 
 
-  <h1>Login</h1>
-
-<p>Erklärung des Loginprozesses und des Zusammenspiels von App, Backend und OIDC-Provider</p>
+<h1 id="login">Login​</h1>
+<p>Im Folgenden werden Ihnen die technischen Hintergründe des Loginprozesses beschrieben und wie damit eine sichere Kommunikation gewährleistet wird.   </p>
+<p>Im <a href="../userguide/">Userguide</a> können Sie genauer nachlesen, wie man sich als Nutzer:in durch den Loginprozess klickt. </p>
+<p>Beim Öffnen der App wird geprüft, ob lokal bereits ein <a href="./#tokenspeicherung">Token hinterlegt</a> ist. Sofern dies der Fall ist, öffnet sich automatisch der Homescreen. Andernfalls, wird der:die Studierende zum Anmelden aufgefordert und der Loginprozess angestoßen. </p>
+<h3 id="loginprozess">Loginprozess</h3>
+<p><img alt="" src="/assets/images/login_structure.png" />
+<em>Informationsaustausch zwischen dem Frontend, Backend, OIDC Proxy und DFN-AAI</em></p>
+<p>Durch Auslösen des Loginprozesses wird der OpenIDConnect (OIDC) flow nach der <a href="https://openid.net/specs/openid-connect-core-1_0.html">OIDC-Spezifikation</a> angestoßen. OIDC ist die Indentifikationsschicht, welche auf dem Autorisierungs-Framework OAuth 2.0 aufbaut. Ausgeführt wird dieser flow von einem OIDC-Proxy, welcher unserem Projekt zur Verfügung gestellt wurde und der in dem OIDC flow die Relying Party darstellt. OIDC Provider, also die Partei welche die Authentifizierung der User übernimmt und dem die Relying Party vertraut, ist hier die Authentifikations- und Autorisierungs-Infrastruktur des Deutschen Forschungsnetzes (DFN-AAI). Da alle beteiligten Universitäten und Fachhochschulen Teil der DFN-AAI sind, melden sich die Studierenden mit den Zugangsdaten ihrer Institution an. </p>
+<p>Bei erfolgreichem Ablauf des OIDC flows, erhält unser Backend einen ein Tag gültigen Token, welcher alle relevanten Nutzerdaten enthält. Unter anderem enthält es die Domain der Universität oder Fachhochschule des:der Studierenden, was die Zuordnung der Studierenden zur jeweiligen Universität oder Fachhochschule ermöglicht. Dies ist wichtig für die Kommunikation zwischen dem App-Backend und educast.nrw, wie Sie <a href="../entwurf/">hier</a> genauer nachlesen können. Welche Nutzerdaten unser Backend dauerhaft speichert, finden Sie  <a href="../database/">hier</a>. </p>
+<p>Zur weiteren Kommunikation wird dem Frontend der App daraufhin ein sechs Monate gültiges Token ausgestellt. Dies ist im Format eines signierten JSON Web Token (JWT). Dieses Token wird bei jeder Anfrage ans App-Backend im http-header <code>backend-ID-token</code> mitgeschickt. Jegliche Kommunikation läuft außerdem über https, um ein Abfangen und Entschlüsseln des Token auf dem Transportweg zu verhindern. </p>
+<h5 id="tokenspeicherung">Tokenspeicherung</h5>
+<p>Um eine sichere Speicherung des Token zu gewährleisten, nutzen wir das Flutter Plugin <em>flutter_secure_storage</em>. Dieses speichert den Token in der Keychain von iOS bzw. in den EncryptedSharedPreferences von Android, sodass der Token jeweils verschlüsselt in den für sensible Daten vorgesehenen key-value stores gesichert wird. </p>
+<h3 id="jwks-endpunkt">JWKS Endpunkt</h3>
+<p>Damit die Signatur des JWTs verifiziert werden kann, haben wir außerdem einen JSON Web Key Set (JWKS) Endpunkt eingerichtet. Unter diesem <a href="https://api.app-staging.educast.cloud/oidc/jwks">Link</a> ist unser JWKS Endpunkt zu finden und damit der öffentliche Schlüssel zur Verifikation der Signatur unseres Backends abrufbar. Durch die in der <a href="https://openid.net/specs/openid-connect-core-1_0.html#10.1.1">OIDC-Spezifikation (10.1.1)</a> empfohlenen Rotation von asymmetrischen Schlüsselpaaren stehen dort ggf. mehrere Schlüssel, wobei der Schlüssel mit der höchsten ID der aktuellste sein sollte. Die ID des Schlüsselpaares wird aber auch im header <code>kid</code> des JWTs mitgeschickt.</p>
+<h5 id="einfugen-eines-neuen-public-keys">Einfügen eines neuen public keys</h5>
+<p>Wenn Sie als Administrator ein <a href="../setup/#keypair">neues Schlüsselpaar generiert</a> haben, steht Ihnen die Funktion <code>add_new_key</code> in der <em>login/<em>init</em>.py</em> Datei zur Verfügung. Diese fügt Ihren öffentlichen Schlüssel automatisch in den JWKS Endpunkt ein.  </p>
+<h3 id="logout">Logout</h3>
+<p>In den Einstellungen der App können sich Studierende auch wieder abmelden. Dadurch wird der lokal gespeicherte Token gelöscht und der:die Studierende auf die Startseite weitergeleitet, sodass ein erneutes Anmelden notwendig ist, um auf die Funktionen der App zuzugreifen. </p>
 
 
 
