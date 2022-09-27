@@ -16,6 +16,6 @@ Im Folgenden ist erläutert, welche Daten gespeichert werden. Es handelt sich ha
   
 Zum Einen werden eindeutige Nutzerdaten gespeichert, die es ermöglichen die User beim Login zu identifizieren und einer Universität zuzuordnen. Diese Zuordnung ist technisch notwendig um jedem Studierenden den Zugriff auf die Kurse und Videos seiner Universität zu ermöglichen. Des Weiteren werden einige technische Daten zum Login-Token gespeichert, genaueres dazu kann [hier](login.md) gefunden werden.  
 
-Außerdem werden die vorhandenen Serien gespeichert, was erleichtert den Zugriff auf verfügbare Serien erleichtert und das Verwenden von einem Passwort/Einschreibeschlüssel zum exklusiven Zugang zu Kursvideos ermöglicht.
+Außerdem werden die vorhandenen Serien gespeichert, was den Zugriff auf verfügbare Serien erleichtert und das Verwenden von einem Passwort/Einschreibeschlüssel zum exklusiven Zugang zu Kursvideos ermöglicht.
 
 Die Tabelle Subscription (engl. für "Abonnement") speichert die Relation zwischen Nutzern und den Serien und gibt an, welcher Studierende, welchen Kurs gespeichert hat. Diese Abonnements werden noch in Semester gegliedert, um dem User im Frontend eine einfache Ansicht ermöglichen zu können.
