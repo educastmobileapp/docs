@@ -696,7 +696,13 @@ Die Section ist ein Dictionary mit den String-Werten <code>url</code>, <code>use
   password: 'password'
 </code></pre>
 <h5 id="keypair">Keypair</h5>
-<p>TODO: Keypair erklären</p>
+<p>Für den Ablauf des Logins wird ein Schlüsselpaar benötigt, welches extern generiert werden muss. Der Pfad zum privaten Schlüssel muss in der <code>.login.yaml</code> in der Section <code>keypair</code> unter <code>private</code> angegeben werden. </p>
+<pre><code class="language-yaml">keypair:
+  private: '/path/to/private_key'
+</code></pre>
+<p>Da nach JWKS Spezifikation mehrere Public Keys valide sein können, muss der öffentliche Schlüssel, bzw. jeder neu Generierte, mittels einer Funktion hinzugefügt werden (siehe <a href="../login/#jwks-endpunkt">Login</a>). Diese Funktion kann mit dem folgenden Befehl ausgeführt werden:<br />
+<code>python -m login.add_new_key("public_key")</code>
+Als Parameter muss der jeweilige Public Key übergeben werden.</p>
 <h3 id="server-starten">Server starten</h3>
 <p>Nach erfolgreichem Konfigurieren kann das Backend gestartet werden. Zum Starten folgenden Befehl ausführen:<br />
 <code>python main.py</code><br />
