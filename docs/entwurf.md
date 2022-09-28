@@ -6,7 +6,8 @@ In diesen Abschnitt sind die getroffenen Entwurfsentscheidungen und die Struktur
 
 ### Frontend
 
-Nutzung des Flutter-Frameworks! Warum? Vorteile, Nachteile, usw
+Nutzung des Flutter-Frameworks! Warum? Vorteile, Nachteile, usw.
+Das schreibt Tom, oder?
 
 
 ### Backend
@@ -18,37 +19,19 @@ Mit einem knappen zeitlichen Rahmen und einem kleinen Team, war bei der Auswahl,
 
 Auch bei der Wahl des Webframeworks legten wir dieses Maß an und entschieden uns für Flask. Flask ist ein light-weight Framework, der relativ minimal ist, sodass schon mit wenig Code ein funktionierender Webserver erstellt werden kann.
 
+## Struktur
 
+Das Backend stellt die Daten für das Frontend bereit. App spezifische Daten, wie z.B. die Abonnierten Vorlesungen der Studierenden sind in der [Datenbank](database.md) von dem Backend gespeichert. Diese werden vom Backend aufbereitet und durch HTTPS API-Endpunkte bereitgestellt.
 
+Die Vorlesungsvideos und die Metadaten zu jenen hat jede Hochschule auf ihrer educast Instanz gespeichert. Jede Hochschule, die die App nutzen möchte, braucht folglich seine eignen educast.nrw Server, auf dem die Vorlesungsvideos gespeichert werden. Das Backend der App benötigt dann die Berechtigung diese Videos durch die API des Servers abzurufen. In der folgenden Grafik ist dies Veranschaulicht.
 
+![](assets/images/Server_Struktur.jpg)
+*Serverstruktur*
 
-
-
-## Frontend
 
 Damit die Studierenden der App alle Funktionen nutzen können und sich gut zurechtfinden, gibt es mehrere möglichst intuitive Ansichten. In der folgenden Grafik sind diese Ansichten und ihre Navigationswege zu sehen.
 
 ![](assets/images/Frontent-Entwurf_Grafik.jpg)
 *App Ansichten und Navigationspfade*
 
-Bevor man auf die eigentliche App zugreifen kann, muss man sich auf der Login Seite anmelden. Diese wird automatisch geöffnet, falls man kein gültiges Token hat, welches man nach anmelden für 6 Monate bekommt. Hier werden die Studierenden durch den Anmeldeprozess geleitet. Detailliertere Informationen gibt es auf der Login (todo: Link einfügen) Seite. Nach erfolgreichen anmelden kommt man zur Hauptansicht der App. 
-
-Bei der Botton Navigation Bar kann man zwischen 3 Ansichten wählen, wie den Studierenden von anderen Apps bereits bekannt sein sollte. Dort können die Studierenden zwischen den Ansichten Home, Suche und Einstellungen wechseln.
-
-Home
-
-Die Ansicht Suche ist dafür da neue Kurse zu Abonnieren, um deren Vorlesungsvideos ansehen zu können.
-
-Einstellungen
-
-fortsetzung folgft
-
-ist das nicht quasi schon ein Userguide?
-
-## Backend
-
-Das Backend stellt die Daten für das Frontend bereit. App spezifische Daten, wie z.B. die Abonnierten Vorlesungen der Studierenden sind in der Datenbank (todo: link Datenbank) von dem Backend gespeichert. Diese werden vom Backend aufbereitet und durch HTTPS API-Endpunkte bereitgestellt.
-
-Die Vorlesungsvideos und die Metadaten zu jenen hat jede Hochschule auf ihrer educast Instanz gespeichert. 
-
-Grafik
+Eine genauere Beschreibung der Frontend Funktionen befindet sich auf der [Userguide Seite](userguide.md).
