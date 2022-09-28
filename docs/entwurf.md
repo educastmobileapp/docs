@@ -1,6 +1,6 @@
 # Entwurf
 
-In diesen Abschnitt sind die getroffenen Entwurfsentscheidungen und die Strukturen beschrieben, mit denen die Anforderungen umgesetzt sind.
+In diesen Abschnitt sind die getroffenen Entwurfsentscheidungen und die Strukturen beschrieben, mit denen die Anforderungen an die App umgesetzt sind.
 
 ## Entwurfsentscheidungen
 
@@ -21,17 +21,15 @@ Auch bei der Wahl des Webframeworks legten wir dieses Maß an und entschieden un
 
 ## Struktur
 
-Das Backend stellt die Daten für das Frontend bereit. App spezifische Daten, wie z.B. die Abonnierten Vorlesungen der Studierenden sind in der [Datenbank](database.md) von dem Backend gespeichert. Diese werden vom Backend aufbereitet und durch HTTPS API-Endpunkte bereitgestellt.
+Das Backend stellt die Daten für das Frontend bereit. App spezifische Daten, wie z.B. die abonnierten Vorlesungen der Studierenden sind in der [Datenbank](database.md) von dem Backend gespeichert. Diese werden vom Backend aufbereitet und durch HTTPS [API-Endpunkte](https://app.swaggerhub.com/apis-docs/Bennit/EducastNRWApp/0.1#/) bereitgestellt.
 
-Die Vorlesungsvideos und die Metadaten zu jenen hat jede Hochschule auf ihrer educast Instanz gespeichert. Jede Hochschule, die die App nutzen möchte, braucht folglich seine eignen educast.nrw Server, auf dem die Vorlesungsvideos gespeichert werden. Das Backend der App benötigt dann die Berechtigung diese Videos durch die API des Servers abzurufen. In der folgenden Grafik ist dies Veranschaulicht.
+Die Vorlesungsvideos und die zugehörigen Metadaten hat jede Hochschule auf ihrer educast Instanz gespeichert. Jede Hochschule, die die App nutzen möchte, braucht folglich einen eigenen educast.nrw Server, auf dem die Vorlesungsvideos gespeichert werden. Das Backend der App benötigt dann die Berechtigung dieser Videos durch die API des educast Servers abzurufen. Diese Informationen werden dann vom Backend für die App spezifisch aufbereitet und mittels der [API-Endpunkte](https://app.swaggerhub.com/apis-docs/Bennit/EducastNRWApp/0.1#/) des Backends für das Frontend bereitgestellt. In der folgenden Grafik ist diese Struktur Veranschaulicht.
 
 ![](assets/images/Server_Struktur.jpg)
 *Serverstruktur*
 
+#### API
+Die API-Endpunkte des Backends sind [hier](https://app.swaggerhub.com/apis-docs/Bennit/EducastNRWApp/0.1#/) als Swagger Dokumentation zu finden. Es können auch Testanfragen mit dem Testuser und [Stable Opencast](https://stable.opencast.org) als Datenquelle, gesendet werden.
 
-Damit die Studierenden der App alle Funktionen nutzen können und sich gut zurechtfinden, gibt es mehrere möglichst intuitive Ansichten. In der folgenden Grafik sind diese Ansichten und ihre Navigationswege zu sehen.
-
-![](assets/images/Frontent-Entwurf_Grafik.jpg)
-*App Ansichten und Navigationspfade*
-
-Eine genauere Beschreibung der Frontend Funktionen befindet sich auf der [Userguide Seite](userguide.md).
+##### Login
+Der Login der Studierenden in die App ist mittels "OpenID Connect" (OIDC) über DFN-AAI umgesetzt. Dieser Prozess wird genauer auf der [Login Seite](login.md) beleuchtet.

@@ -27,13 +27,13 @@ Außerdem wird eine intuitive UI Struktur benötigt, mit der durch die App navig
 Für die Barrierefreiheit der App ist die Option der Sprachauswahl wichtig. In den Einstellungen kann zwischen Deutsch und Englisch gewechselt werden. So wird die Nutzung der App auch internationalen Studenten ermöglicht.
 
 ## Download
-Eine weitere Wichtige Funktion, ist das Downloaden der Videos und spätere abspielen ohne eine Internetverbindung. Dies ermöglicht zum Beispiel das Schauen von Vorlesungsvideos in der Deutschen Bahn, wo selten eine stabile Internetverbindung vorhanden ist (todo: zu wertend?). Ein entscheidender Vorteil der Mobilen App, im Vergleich zum Anschauen der Videos im Browser.
+Eine weitere Wichtige Funktion, ist das Downloaden der Videos und spätere abspielen ohne eine Internetverbindung. Dies ermöglicht zum Beispiel das Schauen von Vorlesungsvideos in der Deutschen Bahn unabhängig von einer stabilen Internetverbindung. Ein entscheidender Vorteil der Mobilen App, im Vergleich zum Anschauen der Videos im Browser.
 
 Im Browser ist kein Download möglich, da nicht sichergestellt werden kann, dass die Videos nicht an unbefugte weitergegeben werden. Bei der educast App werden die Videos in einem sicheren App spezifischen Bereich gespeichert, so dass nicht außerhalb der App darauf zugegriffen werden kann.
 
 Es ist möglich einzelne Videos zu downloaden, sowie alle Videos einer Vorlesung zusammen. In den Einstellungen kann man die Videos wieder löschen und es gibt auch die Möglichkeit alle Videos auf einmal zu löschen.
 
 ## Performance
-Auch die Performance der App ist wichtig. Es wird vermieden redundante Requests an den Server zu senden, stattdessen werden Informationen die später noch gebraucht werden im App internen Cache gehalten (todo: stimmt das so).
+Auch die Performance der App ist wichtig. Es wird vermieden redundante Requests an den Server zu senden, stattdessen werden Informationen die später noch gebraucht werden im App internen Cache gehalten. So werden zum Beispiel die Thumbnails der Vorlesungsvideos gecached. Dies geschieht auf Grund ihrer Größe und da sie für die Vorschau in der Home View benötigt werden. Sodass diese nicht bei jedem Neustart der App neu heruntergeladen werden müssen.
 
 Dadurch wird Internetbandbreite eingespart und jene Elemente können schneller angezeigt werden. Außerdem werden auch viele Requests im Backend für 15 Minuten gecached. So wird die Antwort Zeit von häufigen Anfragen beschleunigt und Rechenleistung vom Server geschont, wodurch größere Nutzerzahlen weniger problematisch sind.
