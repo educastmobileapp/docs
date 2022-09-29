@@ -565,19 +565,19 @@
 
 
 <h1 id="entwurf">Entwurf</h1>
-<p>In diesen Abschnitt sind die getroffenen Entwurfsentscheidungen und die Strukturen beschrieben, mit denen die Anforderungen an die App umgesetzt sind.</p>
+<p>In diesem Abschnitt sind die getroffenen Entwurfsentscheidungen und die Strukturen beschrieben, mit denen die Anforderungen an die App umgesetzt sind.</p>
 <h2 id="entwurfsentscheidungen">Entwurfsentscheidungen</h2>
 <h3 id="frontend">Frontend</h3>
 <p>Nutzung des Flutter-Frameworks! Warum? Vorteile, Nachteile, usw.
 Das schreibt Tom, oder?</p>
 <h3 id="backend">Backend</h3>
 <p>Die Aufgabe des Backends ist das Bereitstellen von Daten, die im Frontend gebraucht werden. Hierbei geht es um die Abfrage von verfügbaren Serien, Videos, Metadaten sowie das Verwalten von Abonnements.  </p>
-<p>Um diese Aufgabe vollumfänglich zu erfüllen ist das Entwickeln einer REST-API nötig, mit der das Frontend Daten mittels HTTP-Requests anfordern kann. Für die Entwicklung unserer REST-API haben wir ein Python-Programm mit dem Webframework <a href="https://flask.palletsprojects.com/en/2.2.x/">Flask</a> entwickelt.</p>
-<p>Mit einem knappen zeitlichen Rahmen und einem kleinen Team, war bei der Auswahl, der für das Backend verwendeten Programmiersprache, vor Allem wichtig, dass wir schnell eine funktionierende Anwendung entwickeln können. Da wir zum Teil schon erfahren in der Verwendung von Python waren und die Sprache außerdem eine im Vergleich sehr leicht zu erlernende Programmiersprache ist, war sie die beste Wahl für uns.</p>
-<p>Auch bei der Wahl des Webframeworks legten wir dieses Maß an und entschieden uns für Flask. Flask ist ein light-weight Framework, der relativ minimal ist, sodass schon mit wenig Code ein funktionierender Webserver erstellt werden kann.</p>
+<p>Um diese Aufgabe vollumfänglich zu erfüllen, ist das Entwickeln einer REST-API nötig, mit der das Frontend Daten mittels HTTP-Requests anfordern kann. Für die Entwicklung unserer REST-API haben wir ein Python-Programm mit dem Webframework <a href="https://flask.palletsprojects.com/en/2.2.x/">Flask</a> entwickelt.</p>
+<p>Mit einem knappen zeitlichen Rahmen und einem kleinen Team, war bei der Auswahl, der für das Backend verwendeten Programmiersprache, vor allem wichtig, dass wir schnell eine funktionierende Anwendung entwickeln können. Da wir zum Teil schon erfahren in der Verwendung von Python waren und die Sprache außerdem eine im Vergleich sehr leicht zu erlernende Programmiersprache ist, war sie die beste Wahl für uns.</p>
+<p>Auch bei der Wahl des Webframeworks legten wir dieses Maß an und entschieden uns für Flask. Flask ist ein light-weight Framework, das relativ minimal ist, sodass schon mit wenig Code ein funktionierender Webserver erstellt werden kann.</p>
 <h2 id="struktur">Struktur</h2>
-<p>Das Backend stellt die Daten für das Frontend bereit. App spezifische Daten, wie z.B. die abonnierten Vorlesungen der Studierenden sind in der <a href="../database/">Datenbank</a> von dem Backend gespeichert. Diese werden vom Backend aufbereitet und durch HTTPS <a href="https://app.swaggerhub.com/apis-docs/Bennit/EducastNRWApp/0.1#/">API-Endpunkte</a> bereitgestellt.</p>
-<p>Die Vorlesungsvideos und die zugehörigen Metadaten hat jede Hochschule auf ihrer educast Instanz gespeichert. Jede Hochschule, die die App nutzen möchte, braucht folglich einen eigenen educast.nrw Server, auf dem die Vorlesungsvideos gespeichert werden. Das Backend der App benötigt dann die Berechtigung dieser Videos durch die API des educast Servers abzurufen. Diese Informationen werden dann vom Backend für die App spezifisch aufbereitet und mittels der <a href="https://app.swaggerhub.com/apis-docs/Bennit/EducastNRWApp/0.1#/">API-Endpunkte</a> des Backends für das Frontend bereitgestellt. In der folgenden Grafik ist diese Struktur Veranschaulicht.</p>
+<p>Das Backend stellt die Daten für das Frontend bereit. App spezifische Daten, wie z.B. die abonnierten Vorlesungen der Studierenden sind in der <a href="../database/">Datenbank</a> von dem Backend gespeichert. Diese werden vom Backend aufbereitet und über die <a href="https://app.swaggerhub.com/apis-docs/Bennit/EducastNRWApp/0.1#/">REST-API Endpunkte</a> bereitgestellt.</p>
+<p>Die Vorlesungsvideos und die zugehörigen Metadaten hat jede Hochschule auf ihrer educast Instanz gespeichert. Jede Hochschule, die die App nutzen möchte, braucht folglich einen eigenen educast.nrw Server, auf dem die Vorlesungsvideos gespeichert werden. Das Backend der App benötigt dann die Berechtigung diese Videos durch die API des educast Servers abzurufen. Diese Informationen werden dann vom Backend für die App spezifisch aufbereitet und mittels der <a href="https://app.swaggerhub.com/apis-docs/Bennit/EducastNRWApp/0.1#/">API-Endpunkte</a> des Backends für das Frontend bereitgestellt. In der folgenden Grafik ist diese Struktur veranschaulicht.</p>
 <p><img alt="" src="../assets/images/Server_Struktur.jpg" />
 <em>Serverstruktur</em></p>
 <h4 id="api">API</h4>
