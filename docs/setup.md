@@ -49,8 +49,16 @@ database:
 ```
 
 ##### Keypair
+Für den Ablauf des Logins wird ein Schlüsselpaar benötigt, welches extern generiert werden muss. Der Pfad zum privaten Schlüssel muss in der `.login.yaml` in der Section `keypair` unter `private` angegeben werden. 
 
-TODO: Keypair erklären
+```yaml
+keypair:
+  private: '/path/to/private_key'
+```
+
+Da nach JWKS Spezifikation mehrere Public Keys valide sein können, muss der öffentliche Schlüssel, bzw. jeder neu Generierte, mittels einer Funktion hinzugefügt werden (siehe [Login](login.md#jwks-endpunkt)). Diese Funktion kann mit dem folgenden Befehl ausgeführt werden:  
+`python -m login.add_new_key("public_key")`
+Als Parameter muss der jeweilige Public Key übergeben werden.
 
 ### Server starten
 Nach erfolgreichem Konfigurieren kann das Backend gestartet werden. Zum Starten folgenden Befehl ausführen:  
