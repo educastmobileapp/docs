@@ -344,18 +344,12 @@
     API
   </a>
   
-    <nav class="md-nav" aria-label="API">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#login" class="md-nav__link">
     Login
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -530,18 +524,12 @@
     API
   </a>
   
-    <nav class="md-nav" aria-label="API">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#login" class="md-nav__link">
     Login
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -577,13 +565,13 @@ Das schreibt Tom, oder?</p>
 <p>Auch bei der Wahl des Webframeworks legten wir dieses Maß an und entschieden uns für Flask. Flask ist ein light-weight Framework, das relativ minimal ist, sodass schon mit wenig Code ein funktionierender Webserver erstellt werden kann.</p>
 <h2 id="struktur">Struktur</h2>
 <p>Das Backend stellt die Daten für das Frontend bereit. App spezifische Daten, wie z.B. die abonnierten Vorlesungen der Studierenden sind in der <a href="../database/">Datenbank</a> von dem Backend gespeichert. Diese werden vom Backend aufbereitet und über die <a href="https://app.swaggerhub.com/apis-docs/Bennit/EducastNRWApp/0.1#/">REST-API Endpunkte</a> bereitgestellt.</p>
-<p>Die Vorlesungsvideos und die zugehörigen Metadaten hat jede Hochschule auf ihrer educast Instanz gespeichert. Jede Hochschule, die die App nutzen möchte, braucht folglich einen eigenen educast.nrw Server, auf dem die Vorlesungsvideos gespeichert werden. Das Backend der App benötigt dann die Berechtigung diese Videos durch die API des educast Servers abzurufen. Diese Informationen werden dann vom Backend für die App spezifisch aufbereitet und mittels der <a href="https://app.swaggerhub.com/apis-docs/Bennit/EducastNRWApp/0.1#/">API-Endpunkte</a> des Backends für das Frontend bereitgestellt. In der folgenden Grafik ist diese Struktur veranschaulicht.</p>
+<p>Die Vorlesungsvideos und die zugehörigen Metadaten hat jede Hochschule auf ihrer educast-Instanz gespeichert. Jede Hochschule, die den educast-Dienst nutzt und folglich so eine Instanz betreibt, kann die App somit nutzen. Das Backend der App benötigt dann die Berechtigung um API-Anfragen an den educast-Server senden zu können (siehe <a href="../setup/#api-user">Setup</a>). Diese Informationen werden dann vom Backend für die App spezifisch aufbereitet und mittels der <a href="https://app.swaggerhub.com/apis-docs/Bennit/EducastNRWApp/0.1#/">API-Endpunkte</a> des Backends für das Frontend bereitgestellt. In der folgenden Grafik ist diese Struktur veranschaulicht.</p>
 <p><img alt="" src="../assets/images/Server_Struktur.jpg" />
 <em>Serverstruktur</em></p>
-<h4 id="api">API</h4>
+<h3 id="api">API</h3>
 <p>Die API-Endpunkte des Backends sind <a href="https://app.swaggerhub.com/apis-docs/Bennit/EducastNRWApp/0.1#/">hier</a> als Swagger Dokumentation zu finden. Es können auch Testanfragen mit dem Testuser und <a href="https://stable.opencast.org">Stable Opencast</a> als Datenquelle, gesendet werden.</p>
-<h5 id="login">Login</h5>
-<p>Der Login der Studierenden in die App ist mittels "OpenID Connect" (OIDC) über DFN-AAI umgesetzt. Dieser Prozess wird genauer auf der <a href="../login/">Login Seite</a> beleuchtet.</p>
+<h3 id="login">Login</h3>
+<p>Der Login der Studierenden in die App ist mittels "OpenID Connect" (OIDC) über DFN-AAI umgesetzt. Dieser Prozess wird genauer auf der <a href="../login/">Login Seite</a> beschrieben.</p>
 
 
 
