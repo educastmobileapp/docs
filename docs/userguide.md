@@ -4,7 +4,7 @@ In diesem Abschnitt wird Ihnen eine Schritt-für-Schritt Anleitung beschrieben, 
 
 Damit die Studierenden alle Funktionen der App nutzen können und sich gut zurechtfinden, gibt es mehrere möglichst intuitive Ansichten. In der folgenden Grafik sind diese Ansichten und ihre Navigationswege zu sehen.
 
-![](assets/images/Frontent-Entwurf_Grafik.jpg)
+![](assets/images/Frontent_Entwurf_Grafik.jpg)
 
 ## Login
 
