@@ -23,13 +23,13 @@ Auch bei der Wahl des Webframeworks legten wir dieses Maß an und entschieden un
 
 Das Backend stellt die Daten für das Frontend bereit. App spezifische Daten, wie z.B. die abonnierten Vorlesungen der Studierenden sind in der [Datenbank](database.md) von dem Backend gespeichert. Diese werden vom Backend aufbereitet und über die [REST-API Endpunkte](https://app.swaggerhub.com/apis-docs/Bennit/EducastNRWApp/0.1#/) bereitgestellt.
 
-Die Vorlesungsvideos und die zugehörigen Metadaten hat jede Hochschule auf ihrer educast Instanz gespeichert. Jede Hochschule, die die App nutzen möchte, braucht folglich einen eigenen educast.nrw Server, auf dem die Vorlesungsvideos gespeichert werden. Das Backend der App benötigt dann die Berechtigung dieser Videos durch die API des educast Servers abzurufen. Diese Informationen werden dann vom Backend für die App spezifisch aufbereitet und mittels der [API-Endpunkte](https://app.swaggerhub.com/apis-docs/Bennit/EducastNRWApp/0.1#/) des Backends für das Frontend bereitgestellt. In der folgenden Grafik ist diese Struktur Veranschaulicht.
+Die Vorlesungsvideos und die zugehörigen Metadaten hat jede Hochschule auf ihrer educast-Instanz gespeichert. Jede Hochschule, die den educast-Dienst nutzt und folglich so eine Instanz betreibt, kann die App somit nutzen. Das Backend der App benötigt dann die Berechtigung um API-Anfragen an den educast-Server senden zu können. Diese Informationen werden dann vom Backend für die App spezifisch aufbereitet und mittels der [API-Endpunkte](https://app.swaggerhub.com/apis-docs/Bennit/EducastNRWApp/0.1#/) des Backends für das Frontend bereitgestellt. In der folgenden Grafik ist diese Struktur Veranschaulicht.
 
 ![](assets/images/Server_Struktur.jpg)
 *Serverstruktur*
 
-#### API
+### API
 Die API-Endpunkte des Backends sind [hier](https://app.swaggerhub.com/apis-docs/Bennit/EducastNRWApp/0.1#/) als Swagger Dokumentation zu finden. Es können auch Testanfragen mit dem Testuser und [Stable Opencast](https://stable.opencast.org) als Datenquelle, gesendet werden.
 
-##### Login
-Der Login der Studierenden in die App ist mittels "OpenID Connect" (OIDC) über DFN-AAI umgesetzt. Dieser Prozess wird genauer auf der [Login Seite](login.md) beleuchtet.
+### Login
+Der Login der Studierenden in die App ist mittels "OpenID Connect" (OIDC) über DFN-AAI umgesetzt. Dieser Prozess wird genauer auf der [Login Seite](login.md) beschrieben.

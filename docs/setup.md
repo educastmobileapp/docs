@@ -34,7 +34,7 @@ apiuser:
     username: 'username'
     password: 'password'
 ```
-Die Section `apiuser` kann beliebig viele API-User enthalten, bzw. sollte für jede Uni, die den educast.nrw nutzt, einen enthalten.
+Die Section `apiuser` kann beliebig viele API-User enthalten, bzw. sollte für jede Uni, die den educast.nrw nutzt, einen enthalten. Die Hintergründe sind [hier](entwurf.md#struktur) genauer erklärt.
 
 
 ##### Datenbank
