@@ -1,11 +1,10 @@
 # Ausblick
 
-Basierend auf dem aktuellen Stand soll an dieser Stelle ein Ausblick über zukünftige Arbeit an der App und deren Ausbau gegeben werden.
+Basierend auf dem aktuellen Stand soll an dieser Stelle ein Ausblick über zukünftige Arbeit an der App und deren Ausbau gegeben werden. Zuerst behandeln wir den Ausbau und anschließend die zukünftigen Features. 
 
-- Lasttests
-- Behebung der Restriktionen
-- Release in den AppStores
-- Entwicklung zusätzlicher Funktionen
+## Ausbau
+
+Wichtitg für zukünftige weitere Arbeiten werden Restrriktionen sein die behoben werden müssen. Dadurch kann eine reibungslose Nutzung der App gewährleistet werden. Um mehr über die Restriktionen zu erfahren klicken Sie [hier](restriktionen.md).
 
 ## Zukünftige Features
 
