@@ -16,14 +16,17 @@ Zu diesen gehören:
 * [Kapitel](#kapitel)
 * [Tablet](#tablet)
 * [Zoomen](#zoomen)
+* [Kommentarfunktion](#kommentarfunktion)
+* [Lastentest](#lastentest)
+* [AppStores](#appstores)
 
 ### Vorschaubilder
 
-Es gibt die Möglichkeit über die Zeitleiste des Videos vor- und zurückzuspulen. Ein zukünftiges Feature könnte das Anzeigen kleiner Vorschaubilder dabei sein, die dem User einen Einblick in die Szene zum jeweiligen Zeitpunkt im Video geben. Solch eine Funktion könnte den Studierenden in der mobilen Anwendung von educast.nrw behilflich sein, um eine passende Szene zu finden und dort hin zu navigieren. 
+Es gibt die Möglichkeit über die Zeitleiste des Videos vor- und zurückzuspulen. Ein zukünftiges Feature könnte das Anzeigen kleiner Vorschaubilder dabei sein, die dem Nutzenden einen Einblick in die Szene zum jeweiligen Zeitpunkt im Video geben. Solch eine Funktion könnte den Studierenden in der mobilen Anwendung von educast.nrw behilflich sein, um eine passende Szene zu finden und dort hin zu navigieren. 
 
 ### Kapitel
 
-Auf der Website [Youtube](https://www.youtube.com) kann der Erstellende des Videos sich dafür entscheiden Kapitel hinzuzufügen. Der User sieht diese in der Zeitleiste. Die Abschnitte werden mit Abtrennungen gegliedert und beim navigieren zu diesen Abtrennungen taucht der Name des Kapitels auf. Dies wäre auch für Nutzer der App nützlich, um verschiedene Kapitel identifizieren zu können und z.B. für das Wiederholen von Inhalten gezielt zu einem bestimmten Kapitel springen zu können. Dadurch würden die Videos übersichtlicher und somit gezielteres Lernen ermöglicht.
+Auf der Website [Youtube](https://www.youtube.com) kann der Erstellende des Videos sich dafür entscheiden Kapitel hinzuzufügen. Der Nutzende sieht diese in der Zeitleiste. Die Abschnitte werden mit Abtrennungen gegliedert und beim navigieren zu diesen Abtrennungen taucht der Name des Kapitels auf. Dies wäre auch für Nutzende der App nützlich, um verschiedene Kapitel identifizieren zu können und z.B. für das Wiederholen von Inhalten gezielt zu einem bestimmten Kapitel springen zu können. Dadurch würden die Videos übersichtlicher und somit gezielteres Lernen ermöglicht.
 
 ### Tablet
 
@@ -37,6 +40,18 @@ Außerdem könnte die Seitenleiste im Home-Bildschirm permanent bestehen bleiben
 ### Zoomen
 
 Die Ansicht auf vielen Smartphones ist klein und Schriften in Videos können unleserlich werden. Um kleine Schriften dennoch lesen zu können, könnte mit eine Zoom-Funktion umgesetzt werden. Damit könnten Studierende in unleserliche Folien hineinzoomen. Das wäre vor allem bei hilfreich, wenn Dozierende Dokumente zeigen oder Tafelbilder erstellen, die klein und schwierig zu lesen sind.
+
+### Kommentarfunktion
+
+Für direktes Feedback und auch Interaktion auf der educast.nrw Plattform sollen Kommentarfunktionen ermöglicht werden. Diese ermöglichen den Studierenden und den Dozierenden die Möglichkeit zu interagieren und durch Kommunikation Verbesserungsvorschläge oder Erklärungsmöglichkeiten einzubinden.
+
+### Lastentest
+
+Um die Platform einem möglichst großem Publikum verfügbar zu machen werden Lastentests benötigt. Dadurch soll das Backend auf dessen Kapazität überprüft und gegebenenfalls erweitert werden. 
+
+### AppStores
+
+Damit educast.nrw der breiten Masse zugänglich wird müssen AppStores Releases gemacht werden. Dort können Nutzende die App herunterladen und auf ihrem Endgerät nutzen.  
 
 
 ***
