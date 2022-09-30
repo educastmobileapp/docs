@@ -20,7 +20,7 @@ Als nächstes muss die Config aufgesetzt werden. Der einfachste Weg dazu ist, da
 Wenn keine Config-Flag übergeben wird, wird die Konfigurationdatei '.login.yaml' im home-Directory des aktuellen Users erstellt. Durch Verwendung des Arguments kann die Datei einen anderen Pfad und Namen bekommen, wobei wichtig ist, dass der Dateityp YAML ist.
 
 ### Konfiguration
-In der Konfigurationsdatei müssen die Login-Credentials für die verwendeten API-User, sowie für die MySQL-Datenbank angeben werden.  # TODO private key
+In der Konfigurationsdatei müssen die Login-Credentials für die verwendeten API-User, sowie für die MySQL-Datenbank angeben werden. Außerdem muss der zu verwendene private Schlüssel angegeben werden. 
 
 ##### API-User
 Die API-User müssen in der Section `apiuser` konfiguriert werden. Jeder dieser User ist eine weitere Section, die benannt ist mit der dazugehörigen Domain der jeweiligen Universität. Dies ist wichtig, um die API-Requests, bei Studierenden von unterschiedlichen Universitäten, dem richtigen API-User zu schicken.  
