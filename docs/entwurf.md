@@ -6,9 +6,15 @@ In diesem Abschnitt sind die getroffenen Entwurfsentscheidungen und die Struktur
 
 ### Frontend
 
-Nutzung des Flutter-Frameworks! Warum? Vorteile, Nachteile, usw.
-Das schreibt Tom, oder?
+Das Frontend stellt die Wiedergabe der Nutzeroberfläche und der Interaktion zwischen Nutzenden und educast.nrw zur Verfügung. Dies umfasst die Wiedergabe auf einem Endgerät in visualisierter Darstellungsweise.
 
+Um diese Anforderungen zu erfüllen wird ein Framework benötigt das Komponenten visualisiert darstellen kann und das Backend einbindet. Zudem ist wichtig, dass der begrenzte zeitliche Rahmen und das Niveau der Projektgruppe berücksichtig wird. Außerdem soll den Studierenden ein Zugriff über mehrere Plattformen auf die App gewährleistet werden. 
+
+Die Wahl ist nicht einfach da es viele verschiedene Anbieter mit Vor- und Nachteilen gibt, letztenendes ist die Entscheidung auf Flutter gefallen. 
+Flutter ist ein Open Source Framework von Google das nativ kompilierte Crossplattformentwicklung ermöglicht.
+Der Gruppe ist Flutter vorher bereits geläufig gewesen und zudem schnell und einfach zu erlernen. Zusätzlich bietet Flutter die Möglichkeit mit einer Codebasis mehrere Plattformen zu erreichen. 
+
+Flutter konnte mit vielen weiteren Features helfen und zur Entwicklung einer schönen Nutzeroberfläche beitragen. 
 
 ### Backend
 Die Aufgabe des Backends ist das Bereitstellen von Daten, die im Frontend gebraucht werden. Hierbei geht es um die Abfrage von verfügbaren Serien, Videos, Metadaten sowie das Verwalten von Abonnements.  
