@@ -556,8 +556,12 @@
 <p>In diesem Abschnitt sind die getroffenen Entwurfsentscheidungen und die Strukturen beschrieben, mit denen die Anforderungen an die App umgesetzt sind.</p>
 <h2 id="entwurfsentscheidungen">Entwurfsentscheidungen</h2>
 <h3 id="frontend">Frontend</h3>
-<p>Nutzung des Flutter-Frameworks! Warum? Vorteile, Nachteile, usw.
-Das schreibt Tom, oder?</p>
+<p>Das Frontend stellt die Nutzeroberfläche dar und ist für die Interaktion zwischen Nutzenden und educast.nrw verantwortlich. Dies umfasst die Wiedergabe auf einem Endgerät in visualisierter Darstellungsweise.</p>
+<p>Um diese Anforderungen zu erfüllen wird ein Framework benötigt, das Komponenten visualisiert darstellen kann und Informationen vom Backend einbindet. Zudem ist wichtig, dass der begrenzte zeitliche Rahmen und das Niveau der Projektgruppe berücksichtig wird. Außerdem soll den Studierenden ein Zugriff über mehrere Plattformen auf die App gewährleistet werden. </p>
+<p>Die Wahl ist nicht einfach da es viele verschiedene Anbieter mit Vor- und Nachteilen gibt. Letztlich ist die Entscheidung auf Flutter gefallen. 
+Flutter ist ein Open Source Framework von Google, das nativ kompilierte Cross-Plattform-Entwicklung ermöglicht.
+Der Gruppe ist Flutter vorher bereits geläufig gewesen und zudem schnell und einfach zu erlernen. Zusätzlich bietet Flutter die Möglichkeit mit einer Codebasis mehrere Plattformen zu erreichen, sodass keine seperate Entwicklung von iOS- und Android-App notwendig ist. </p>
+<p>Flutter konnte mit vielen weiteren Features helfen und zur schnellen Entwicklung der Nutzeroberfläche beitragen. </p>
 <h3 id="backend">Backend</h3>
 <p>Die Aufgabe des Backends ist das Bereitstellen von Daten, die im Frontend gebraucht werden. Hierbei geht es um die Abfrage von verfügbaren Serien, Videos, Metadaten sowie das Verwalten von Abonnements.  </p>
 <p>Um diese Aufgabe vollumfänglich zu erfüllen, ist das Entwickeln einer REST-API nötig, mit der das Frontend Daten mittels HTTP-Requests anfordern kann. Für die Entwicklung unserer REST-API haben wir ein Python-Programm mit dem Webframework <a href="https://flask.palletsprojects.com/en/2.2.x/">Flask</a> entwickelt.</p>
