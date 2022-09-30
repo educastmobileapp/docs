@@ -10,7 +10,7 @@ Zur Inbetriebnahme ist nach der richtigen Konfiguration der Login-Daten und der 
 
 ## Daten
 Im Folgenden ist erläutert, welche Daten gespeichert werden. Es handelt sich hauptsächlich um Daten zur Ermöglichung des Abonnieren-Features.  
-![Modell der Datenbank](assets/images/database_diagram.png "Modell der Datenbank")
+![Modell der Datenbank](assets/images/database_diagram.png "Modell der Datenbank")  
 *Modell der Datenbanktabellen als UML-Klassendiagramm (Primary Keys sind unterstrichen)*
 
   

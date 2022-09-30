@@ -4,14 +4,14 @@ site_author: 'Sebastian Hohn, Lennart Ferlings, Bennit Strack, Hannah Niehaus, T
 nav:
   - Home: index.md
   - Anforderungen: anforderungen.md
-  - Setup: setup.md
   - Userguide: userguide.md
-  - Datenbank: database.md
-  - Login: login.md
+  - Setup: setup.md
   - Entwurf und Struktur: entwurf.md
+  - Login: login.md
+  - Datenbank: database.md
   - Implementation: 
-    - Download: implementation/download.md
     - Player: implementation/player.md
+    - Download: implementation/download.md
   - Restriktionen: restriktionen.md
   - Ausblick: future_work.md
 
